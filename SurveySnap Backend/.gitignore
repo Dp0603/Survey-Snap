@@ -1,0 +1,120 @@
+# ----------------------------------------
+# Logs and Debug
+# ----------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ----------------------------------------
+# Dependency directories
+# ----------------------------------------
+node_modules/
+jspm_packages/
+bower_components/
+web_modules/
+
+# ----------------------------------------
+# Build outputs and compiled files
+# ----------------------------------------
+build/
+dist/
+coverage/
+*.lcov
+
+# Test coverage
+.nyc_output/
+lib-cov/
+
+# Parcel cache
+.cache/
+.parcel-cache/
+
+# Vite / VitePress
+.vite/
+.vitepress/dist/
+.vitepress/cache/
+
+# Next.js / Nuxt.js / Gatsby / VuePress
+.next/
+.nuxt/
+.vuepress/dist/
+.cache/          # Gatsby, VuePress v2
+.temp/
+
+# Docusaurus
+.docusaurus/
+
+# ----------------------------------------
+# Configuration and Lockfiles
+# ----------------------------------------
+.lock-wscript
+*.tsbuildinfo
+.yarn-integrity
+.pnp.*
+.rpt2_cache/
+.rts2_cache_*/
+
+# ----------------------------------------
+# Environment variables
+# ----------------------------------------
+.env
+.env.local
+.env.*.local
+
+# ----------------------------------------
+# Lint/Format/Build tools
+# ----------------------------------------
+.eslintcache
+.stylelintcache
+
+# ----------------------------------------
+# Package artifacts
+# ----------------------------------------
+*.tgz
+
+# ----------------------------------------
+# Miscellaneous
+# ----------------------------------------
+.node_repl_history
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Serverless
+.serverless/
+
+# FuseBox
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# TernJS
+.tern-port
+
+# VSCode test
+.vscode-test/
+
+# ----------------------------------------
+# OS-specific
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------
+
