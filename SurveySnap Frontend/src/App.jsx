@@ -51,7 +51,7 @@ import RespondToSurveyPage from "./components/surveyrespondent/RespondToSurveyPa
 import SurveyRespondentViewResponse from "./components/surveyrespondent/SurveyRespondentViewResponse";
 import SurveyRespondentCompletedSurveys from "./components/surveyrespondent/SurveyRespondentCompletedSurveys";
 
-axios.defaults.baseURL = "https://ss-b.onrender.com";
+axios.defaults.baseURL = "https://survey-snap-backend.onrender.com";
 
 function App() {
   const location = useLocation();
