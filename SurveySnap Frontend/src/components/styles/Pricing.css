@@ -1,0 +1,92 @@
+.pricing-section {
+  padding: 48px 0;
+  background: #f7f9fb;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #22223b;
+}
+
+.pricing-subtitle {
+  color: #4a4e69;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.pricing-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card.enhanced {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card.enhanced:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.16);
+}
+
+.pricing-icon {
+  margin-bottom: 1rem;
+}
+
+.pricing-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin: 1rem 0;
+}
+
+.pricing-cta {
+  background: #fff;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pricing-cta.primary,
+.pricing-card.highlight .pricing-cta {
+  background: #1976d2;
+  color: #fff;
+  border: 2px solid #1976d2;
+}
+
+.pricing-cta:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+.popular-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ffb703;
+  color: #22223b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.3rem 0.9rem;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(255, 183, 3, 0.15);
+}

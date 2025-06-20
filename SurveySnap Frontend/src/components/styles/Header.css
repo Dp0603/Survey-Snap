@@ -1,0 +1,210 @@
+.header-ss {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+  background: white;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.header-ss-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 18px;
+}
+
+.header-ss-center {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Left align by default */
+  align-items: center;
+}
+
+.header-ss-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+
+.header-ss-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-ss-auth-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-ss-auth-buttons button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-ss-login-btn {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.header-ss-login-btn:hover {
+  background: black;
+  color: white;
+}
+
+.header-ss-signup-btn {
+  background: #007bff;
+  color: white;
+}
+
+.header-ss-signup-btn:hover {
+  background: #0056b3;
+}
+
+.header-ss-auth-nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header-ss-back-home,
+.header-ss-switch-auth {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-ss-back-home:hover,
+.header-ss-switch-auth:hover {
+  color: #007bff;
+}
+
+.header-ss-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-ss-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-ss-nav ul li button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-ss-nav ul li button:hover {
+  color: #007bff;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .header-ss {
+    padding: 0 1.5%;
+    height: 54px;
+  }
+  .header-ss-logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-ss {
+    height: 50px;
+    padding: 0 1%;
+  }
+  .header-ss-hamburger {
+    display: block;
+    position: relative;
+    left: 0;
+    margin-right: 0;
+  }
+  .header-ss-center {
+    justify-content: center; /* Center on mobile */
+    flex: 1;
+  }
+  .header-ss-logo {
+    font-size: 18px;
+  }
+  .header-ss-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+    z-index: 1001;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .header-ss-nav.open {
+    display: flex;
+  }
+  .header-ss-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .header-ss-right {
+    gap: 10px;
+  }
+  .header-ss-auth-buttons {
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 0;
+  }
+  .header-ss-auth-nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-ss {
+    height: 44px;
+    padding: 0 0.5%;
+  }
+  .header-ss-logo {
+    font-size: 15px;
+  }
+  .header-ss-auth-buttons button,
+  .header-ss-nav ul li button {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+}

@@ -1,0 +1,135 @@
+.manageresponse-container {
+  padding: 24px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.manageresponse-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.manageresponse-inputs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.manageresponse-select {
+  min-width: 220px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.manageresponse-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.manageresponse-buttons button {
+  white-space: nowrap;
+}
+
+.manageresponse-table-container {
+  margin-top: 12px;
+}
+
+.MuiDataGrid-root {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  font-size: 0.9rem;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #e3f2fd;
+  color: #1e88e5;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.MuiDataGrid-cell {
+  font-size: 0.875rem;
+}
+
+.manageresponse-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.manageresponse-empty {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 500;
+  color: #777;
+}
+
+.manageresponse-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.manageresponse-delete-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #ef9a9a;
+  background-color: #ffebee;
+  color: #d32f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.manageresponse-delete-btn:hover {
+  background-color: #ffcdd2;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .manageresponse-topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .manageresponse-inputs,
+  .manageresponse-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .manageresponse-table-container {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .manageresponse-container {
+    padding: 10px;
+  }
+  .manageresponse-topbar,
+  .manageresponse-inputs,
+  .manageresponse-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .manageresponse-select {
+    width: 100%;
+  }
+}
